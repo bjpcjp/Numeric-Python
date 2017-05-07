@@ -1,6 +1,6 @@
 # Scientific Computing with Python
 
-![book-cover](pics/book-cover.png)
+![book-cover](pics/bookcover.png)
 
 *  1. Getting Started
 *  2. Intro: Numeric Computing with NumPy
