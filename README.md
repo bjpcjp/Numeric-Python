@@ -2,10 +2,7 @@
 
 | Tables   |      Are      |
 |:----------:|:-------------:|
-| ![book-cover](pics/bookcover.png) |  left-aligned |
-| col 2 is |    centered   |
-| col 3 is | right-aligned |
-
+| ![book-cover](pics/bookcover.png) |  
 
 *  1. Getting Started
 *  2. Intro: Numeric Computing with NumPy
@@ -29,3 +26,8 @@
 * 17. Signal Processing
 * 18. Data I/O
 * 19. Optimization
+ |
+| col 2 is |    centered   |
+| col 3 is | right-aligned |
+
+
