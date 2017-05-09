@@ -1,7 +1,10 @@
 # Scientific Computing with Python
 
+|   |   |
+|---|---|
+|
 ![book-cover](pics/bookcover.png)
-
+|
 *  1. Getting Started
 *  2. Intro: Numeric Computing with NumPy
 *  3. Intro: Symbolic Computing with SymPy 
@@ -24,3 +27,4 @@
 * 17. Signal Processing
 * 18. Data I/O
 * 19. Optimization
+|
