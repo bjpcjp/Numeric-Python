@@ -1,6 +1,6 @@
 # Scientific Computing with Python
 
-| Tables   |      Are      |
+| Book Cover |    Contents   |
 |:----------:|:-------------:|
 | ![book-cover](pics/bookcover.png) |  
 
