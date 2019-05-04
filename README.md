@@ -1,4 +1,5 @@
 # Numeric Computing with Python
+### [Original ebook on Apress](https://www.apress.com/us/book/9781484242452)
 
 <table>
   <tr>
