@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Overiew:-a-typical-Python-based-scientific-computing-stack.">Overiew: a typical Python-based scientific computing stack.<a class="anchor-link" href="#Overiew:-a-typical-Python-based-scientific-computing-stack.">&#182;</a></h3><p><img src="pics/software-stack-overview.png" alt="software stack"></p>
+<h3 id="Overview:-a-typical-Python-based-scientific-computing-stack.">Overview: a typical Python-based scientific computing stack.<a class="anchor-link" href="#Overview:-a-typical-Python-based-scientific-computing-stack.">&#182;</a></h3><p><img src="pics/software-stack-overview.png" alt="software stack"></p>
 
 </div>
 </div>
@@ -11795,7 +11795,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Interpreter">Interpreter<a class="anchor-link" href="#Interpreter">&#182;</a></h2>
+<h2 id="Interpreter">Interpreter<a class="anchor-link" href="#Interpreter">&#182;</a></h2><ul>
+<li>The easist way to execute Python code: run the program directly.</li>
+<li>Use Jupyter magic command to write Python source file to disk:</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -11831,9 +11835,20 @@ print(&quot;Hello from Python!&quot;)
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Use the ! system shell command (included in the Python Jupyter kernel) to interactively run Python with hello.py as its argument.</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python hello.py
@@ -11864,7 +11879,7 @@ print(&quot;Hello from Python!&quot;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python --version
@@ -11897,17 +11912,52 @@ print(&quot;Hello from Python!&quot;)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Input-and-output-caching">Input and output caching<a class="anchor-link" href="#Input-and-output-caching">&#182;</a></h2><p>Input prompt shown as <strong>In [1]</strong>; corresponding output shown as <strong>Out [1]</strong>.</p>
+<h2 id="Input-and-output-caching">Input and output caching<a class="anchor-link" href="#Input-and-output-caching">&#182;</a></h2><ul>
+<li>Input &amp; output history can be accessed using <strong>In</strong> (a list) &amp; <strong>Out</strong> (a dictionary). Both can be indexed with a cell number. </li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">*</span> <span class="mi">3</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>9</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -11926,7 +11976,7 @@ print(&quot;Hello from Python!&quot;)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>9</pre>
+<pre>&#34;get_ipython().system(&#39;python hello.py&#39;)&#34;</pre>
 </div>
 
 </div>
@@ -11934,13 +11984,25 @@ print(&quot;Hello from Python!&quot;)
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>A single underscore = the most recent output; </li>
+<li>A double underscore = the <em>next</em> most recent output.</li>
+</ul>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
 </pre></div>
 
 </div>
@@ -11959,7 +12021,7 @@ print(&quot;Hello from Python!&quot;)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;get_ipython().run_cell_magic(\&#39;writefile\&#39;, \&#39;hello.py\&#39;, \&#39;print(&#34;Hello from Python!&#34;)\&#39;)&#39;</pre>
+<pre>2</pre>
 </div>
 
 </div>
@@ -11967,22 +12029,13 @@ print(&quot;Hello from Python!&quot;)
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>A single underscore = the most recent output; a double underscore = the <em>next</em> most recent output.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -12001,7 +12054,7 @@ print(&quot;Hello from Python!&quot;)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
+<pre>4</pre>
 </div>
 
 </div>
@@ -12015,7 +12068,7 @@ print(&quot;Hello from Python!&quot;)
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">__</span>
 </pre></div>
 
 </div>
@@ -12034,7 +12087,7 @@ print(&quot;Hello from Python!&quot;)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>4</pre>
+<pre>(4, 2)</pre>
 </div>
 
 </div>
@@ -12048,7 +12101,8 @@ print(&quot;Hello from Python!&quot;)
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">__</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># In = a list</span>
+<span class="n">In</span>
 </pre></div>
 
 </div>
@@ -12067,7 +12121,15 @@ print(&quot;Hello from Python!&quot;)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(4, 2)</pre>
+<pre>[&#39;&#39;,
+ &#34;get_ipython().system(&#39;python hello.py&#39;)&#34;,
+ &#34;get_ipython().system(&#39;python --version&#39;)&#34;,
+ &#39;3 * 3&#39;,
+ &#39;In[1]&#39;,
+ &#39;1+1&#39;,
+ &#39;2+2&#39;,
+ &#39;_, __&#39;,
+ &#39;In&#39;]</pre>
 </div>
 
 </div>
@@ -12075,22 +12137,14 @@ print(&quot;Hello from Python!&quot;)
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>In</strong> is an array:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">In</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Out = a dictionary</span>
+<span class="n">Out</span>
 </pre></div>
 
 </div>
@@ -12109,64 +12163,12 @@ print(&quot;Hello from Python!&quot;)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;&#39;,
- &#39;get_ipython().run_cell_magic(\&#39;writefile\&#39;, \&#39;hello.py\&#39;, \&#39;print(&#34;Hello from Python!&#34;)\&#39;)&#39;,
- &#34;get_ipython().system(&#39;python hello.py&#39;)&#34;,
- &#34;get_ipython().system(&#39;python --version&#39;)&#34;,
- &#39;3 * 3&#39;,
- &#39;In[1]&#39;,
- &#39;1+1&#39;,
- &#39;2+2&#39;,
- &#39;_, __&#39;,
- &#39;In&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Out</strong> is a dictionary:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Out</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[10]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{4: 9,
- 5: &#39;get_ipython().run_cell_magic(\&#39;writefile\&#39;, \&#39;hello.py\&#39;, \&#39;print(&#34;Hello from Python!&#34;)\&#39;)&#39;,
- 6: 2,
- 7: 4,
- 8: (4, 2),
- 9: [&#39;&#39;,
-  &#39;get_ipython().run_cell_magic(\&#39;writefile\&#39;, \&#39;hello.py\&#39;, \&#39;print(&#34;Hello from Python!&#34;)\&#39;)&#39;,
+<pre>{3: 9,
+ 4: &#34;get_ipython().system(&#39;python hello.py&#39;)&#34;,
+ 5: 2,
+ 6: 4,
+ 7: (4, 2),
+ 8: [&#39;&#39;,
   &#34;get_ipython().system(&#39;python hello.py&#39;)&#34;,
   &#34;get_ipython().system(&#39;python --version&#39;)&#34;,
   &#39;3 * 3&#39;,
@@ -12184,21 +12186,13 @@ print(&quot;Hello from Python!&quot;)
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Suppress output results by ending statement with a semicolon:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Suppress output results by ending statement with a semicolon</span>
+<span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">;</span>
 </pre></div>
 
 </div>
@@ -12210,14 +12204,16 @@ print(&quot;Hello from Python!&quot;)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Autocompletion">Autocompletion<a class="anchor-link" href="#Autocompletion">&#182;</a></h2><p>The <strong>Tab</strong> key activates autocompletion (displays list of symbol names that are valid completions of what has been typed thus far.)</p>
+<h2 id="Autocompletion">Autocompletion<a class="anchor-link" href="#Autocompletion">&#182;</a></h2><ul>
+<li>The <strong>Tab</strong> key activates autocompletion (displays list of symbol names that are valid completions of what has been typed thus far.)</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -12232,7 +12228,9 @@ print(&quot;Hello from Python!&quot;)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Results of typing "os.w", followed by \t:</p>
+<ul>
+<li>Results of typing "os.w", followed by \t:</li>
+</ul>
 <p><img src="pics/autocompletion.png" alt="autocompletion"></p>
 
 </div>
@@ -12242,14 +12240,16 @@ print(&quot;Hello from Python!&quot;)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">&#182;</a></h2><p>"Docstrings" provide a built-in reference manual for most Python modules. Display the docstring by appending a Python object with "?".</p>
+<h2 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">&#182;</a></h2><ul>
+<li>"Docstrings" provide a built-in reference manual for most Python modules. Display the docstring by appending a Python object with "?".</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -12262,7 +12262,7 @@ print(&quot;Hello from Python!&quot;)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>math.cos<span class="o">?</span>
@@ -12302,14 +12302,16 @@ Return the cosine of x (measured in radians).
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Interaction-with-System-Shell">Interaction with System Shell<a class="anchor-link" href="#Interaction-with-System-Shell">&#182;</a></h2><p>(In this case, Ubuntu Linux.)</p>
+<h2 id="Interaction-with-System-Shell">Interaction with System Shell<a class="anchor-link" href="#Interaction-with-System-Shell">&#182;</a></h2><ul>
+<li>Anything after ! is evaluated using the system shell, such as bash.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>touch file1.py file2.py file3.py
@@ -12322,7 +12324,7 @@ Return the cosine of x (measured in radians).
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ls file*
@@ -12353,10 +12355,12 @@ Return the cosine of x (measured in radians).
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span> <span class="o">=</span> <span class="o">!</span>ls file*
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># output of a system shell command</span>
+<span class="c1"># can be captured in a Python variable</span>
+<span class="n">files</span> <span class="o">=</span> <span class="o">!</span>ls file*
 </pre></div>
 
 </div>
@@ -12366,10 +12370,43 @@ Return the cosine of x (measured in radians).
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span>
 </pre></div>
 
 </div>
@@ -12388,7 +12425,7 @@ Return the cosine of x (measured in radians).
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>3</pre>
+<pre>[&#39;file1.py&#39;, &#39;file2.py&#39;, &#39;file3.py&#39;]</pre>
 </div>
 
 </div>
@@ -12402,30 +12439,12 @@ Return the cosine of x (measured in radians).
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pass Python variable values to shell commands</span>
+<span class="c1"># by prefixing the variable name with $.</span>
+<span class="n">file</span> <span class="o">=</span> <span class="s2">&quot;file1.py&quot;</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[19]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;file1.py&#39;, &#39;file2.py&#39;, &#39;file3.py&#39;]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -12433,19 +12452,6 @@ Return the cosine of x (measured in radians).
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="s2">&quot;file1.py&quot;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ls -l <span class="nv">$file</span>
@@ -12465,7 +12471,7 @@ Return the cosine of x (measured in radians).
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>-rw-rw-r-- 1 bjpcjp bjpcjp 0 Apr  7 12:16 file1.py
+<pre>-rw-rw-r-- 1 bjpcjp bjpcjp 0 May  4 17:11 file1.py
 </pre>
 </div>
 </div>
@@ -12478,18 +12484,22 @@ Return the cosine of x (measured in radians).
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IPython-Extensions">IPython Extensions<a class="anchor-link" href="#IPython-Extensions">&#182;</a></h2><p>Commands start with one or two "%" characters. A single % is used for single-line commands; dual %% is used for cells (multiple lines).</p>
-<p>%lsmagic returns a list of available commands.</p>
+<h2 id="IPython-Extensions">IPython Extensions<a class="anchor-link" href="#IPython-Extensions">&#182;</a></h2><ul>
+<li><p>Commands start with one or two "%" characters. A single % is used for single-line commands; dual %% is used for cells (multiple lines).</p>
+</li>
+<li><p>%lsmagic returns a list of available commands.</p>
+</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">lsmagic</span><span class="o">?</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">lsmagic</span>
 </pre></div>
 
 </div>
@@ -12502,15 +12512,19 @@ Return the cosine of x (measured in radians).
 
 <div class="output_area">
 
-<div class="prompt"></div>
+<div class="prompt output_prompt">Out[21]:</div>
 
 
 
 
-<div class="output_text output_subarea ">
-<pre><span class="ansi-red-fg">Docstring:</span> List currently available magic functions.
-<span class="ansi-red-fg">File:</span>      ~/anaconda3/lib/python3.6/site-packages/IPython/core/magics/basic.py
-</pre>
+<div class="output_text output_subarea output_execute_result">
+<pre>Available line magics:
+%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.</pre>
 </div>
 
 </div>
@@ -12523,13 +12537,13 @@ Return the cosine of x (measured in radians).
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Running-scripts-using-%run,-or-by-using-!python">Running scripts using %run, or by using !python<a class="anchor-link" href="#Running-scripts-using-%run,-or-by-using-!python">&#182;</a></h2>
+<h2 id="Running-scripts">Running scripts<a class="anchor-link" href="#Running-scripts">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> fib.py
@@ -12574,7 +12588,7 @@ print(fib(10))
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>python fib.py
@@ -12605,7 +12619,7 @@ print(fib(10))
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> fib.py
@@ -12636,7 +12650,7 @@ print(fib(10))
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fib</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
@@ -12652,7 +12666,7 @@ print(fib(10))
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[29]:</div>
+<div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -12671,14 +12685,17 @@ print(fib(10))
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>%who</strong> lists all defined symbols; <strong>%whos</strong> provides more detailed info.</p>
+<h2 id="Listing-all-defined-symbols">Listing all defined symbols<a class="anchor-link" href="#Listing-all-defined-symbols">&#182;</a></h2><ul>
+<li><strong>%who</strong> lists all defined symbols</li>
+<li><strong>%whos</strong> provides more detailed info.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">who</span>
@@ -12709,7 +12726,7 @@ print(fib(10))
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">whos</span>
@@ -12731,7 +12748,7 @@ print(fib(10))
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Variable   Type        Data/Info
 --------------------------------
-fib        function    &lt;function fib at 0x7fb5a2f25048&gt;
+fib        function    &lt;function fib at 0x7f3378d23c80&gt;
 file       str         file1.py
 files      SList       [&#39;file1.py&#39;, &#39;file2.py&#39;, &#39;file3.py&#39;]
 math       module      &lt;module &#39;math&#39; from &#39;/hom&lt;...&gt;36m-x86_64-linux-gnu.so&#39;&gt;
@@ -12748,17 +12765,20 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Debugger">Debugger<a class="anchor-link" href="#Debugger">&#182;</a></h2><p>Use <strong>%debug</strong> to step directly into the Python debugger.</p>
+<h2 id="Debugger">Debugger<a class="anchor-link" href="#Debugger">&#182;</a></h2><ul>
+<li>Use <strong>%debug</strong> to step directly into the Python debugger.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fib</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fib function fails - can&#39;t use floating point numbers.</span>
+<span class="n">fib</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12778,10 +12798,11 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-37-da4664af34ee&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>fib<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">&lt;ipython-input-30-1ad4c07e578b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg"># fib function fails - can&#39;t use floating point numbers.</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>fib<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">~/projects/code/python-numerical-backup/Numeric-Python/fib.py</span> in <span class="ansi-cyan-fg">fib</span><span class="ansi-blue-fg">(N)</span>
+<span class="ansi-green-fg">~/projects/code/python-numerical/Numeric-Python/fib.py</span> in <span class="ansi-cyan-fg">fib</span><span class="ansi-blue-fg">(N)</span>
 <span class="ansi-green-intense-fg ansi-bold">      5</span>     &#34;&#34;&#34; 
 <span class="ansi-green-intense-fg ansi-bold">      6</span>     f0<span class="ansi-blue-fg">,</span> f1 <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">1</span>
 <span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg">     </span>f <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">*</span> N
@@ -12798,7 +12819,7 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">debug</span>
@@ -12818,7 +12839,7 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&gt; <span class="ansi-green-fg">/home/bjpcjp/projects/code/python-numerical-backup/Numeric-Python/fib.py</span>(7)<span class="ansi-cyan-fg">fib</span><span class="ansi-blue-fg">()</span>
+<pre>&gt; <span class="ansi-green-fg">/home/bjpcjp/projects/code/python-numerical/Numeric-Python/fib.py</span>(7)<span class="ansi-cyan-fg">fib</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-fg">      5 </span><span class="ansi-red-fg">    &#34;&#34;&#34; 
 </span><span class="ansi-green-fg">      6 </span><span class="ansi-red-fg">    </span>f0<span class="ansi-blue-fg">,</span> f1 <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">1</span>
 <span class="ansi-green-fg">----&gt; 7 </span><span class="ansi-red-fg">    </span>f <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">*</span> N
@@ -12837,14 +12858,61 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Timing-and-profiling-code">Timing and profiling code<a class="anchor-link" href="#Timing-and-profiling-code">&#182;</a></h2><p><strong>%timeit</strong> and <strong>%time</strong> provide simple benchmarking utilities.</p>
+<h2 id="Resetting-the-Python-namespace">Resetting the Python namespace<a class="anchor-link" href="#Resetting-the-Python-namespace">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">reset</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Timing-and-profiling-code">Timing and profiling code<a class="anchor-link" href="#Timing-and-profiling-code">&#182;</a></h2><ul>
+<li><strong>%timeit</strong> and <strong>%time</strong> provide simple benchmarking utilities.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># first, re-define fibonacci code used above.</span>
+<span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">N</span><span class="p">):</span> 
+    <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">    Return a list of the first N Fibonacci numbers.</span>
+<span class="sd">    &quot;&quot;&quot;</span> 
+    <span class="n">f0</span><span class="p">,</span> <span class="n">f1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">N</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+        <span class="n">f</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">f0</span> <span class="o">+</span> <span class="n">f1</span>
+        <span class="n">f0</span><span class="p">,</span> <span class="n">f1</span> <span class="o">=</span> <span class="n">f1</span><span class="p">,</span> <span class="n">f</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">f</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> fib(50)
@@ -12864,7 +12932,7 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>5.29 µs ± 107 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+<pre>5.15 µs ± 17.4 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </pre>
 </div>
 </div>
@@ -12875,10 +12943,11 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="o">%</span><span class="k">time</span> fib(100)
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %time only runs once. less accurate estimate.</span>
+<span class="n">result</span> <span class="o">=</span> <span class="o">%</span><span class="k">time</span> fib(100)
 </pre></div>
 
 </div>
@@ -12896,7 +12965,7 @@ os         module      &lt;module &#39;os&#39; from &#39;/home/&lt;...&gt;da3/li
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>CPU times: user 0 ns, sys: 0 ns, total: 0 ns
-Wall time: 28.6 µs
+Wall time: 19.8 µs
 </pre>
 </div>
 </div>
@@ -12942,14 +13011,16 @@ Wall time: 28.6 µs
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The Python <strong>cProfile</strong> module (which is standard) provides the <strong>%prun</strong> (for statements) and <strong>%run</strong> (for external scripts) profiling commands. Consider the following:</p>
+<ul>
+<li>The <strong>cProfile</strong> module provides <strong>%prun</strong> (for statements) and <strong>%run</strong> (for external scripts) profiling commands.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12959,7 +13030,8 @@ Wall time: 28.6 µs
 <span class="sd">    Simulate N random walkers taking M steps</span>
 <span class="sd">    Return the largest distance from the starting point.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">trajectories</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+    <span class="n">trajectories</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span> 
+                    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">trajectories</span><span class="p">))</span>
 </pre></div>
 
@@ -12970,10 +13042,11 @@ Wall time: 28.6 µs
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">prun</span> random_walker_max_distance(400, 10000)
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns </span>
+<span class="o">%</span><span class="k">prun</span> random_walker_max_distance(400, 10000)
 </pre></div>
 
 </div>
@@ -13002,18 +13075,18 @@ Wall time: 28.6 µs
 
 
 <div class="output_text output_subarea ">
-<pre>         20010 function calls in 0.288 seconds
+<pre>         20010 function calls in 0.295 seconds
 
    Ordered by: internal time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-    10000    0.224    0.000    0.224    0.000 {method &#39;randn&#39; of &#39;mtrand.RandomState&#39; objects}
+    10000    0.230    0.000    0.230    0.000 {method &#39;randn&#39; of &#39;mtrand.RandomState&#39; objects}
     10000    0.035    0.000    0.035    0.000 {method &#39;cumsum&#39; of &#39;numpy.ndarray&#39; objects}
-        1    0.017    0.017    0.285    0.285 &lt;ipython-input-43-8baffc390b20&gt;:3(random_walker_max_distance)
-        1    0.006    0.006    0.266    0.266 &lt;ipython-input-43-8baffc390b20&gt;:8(&lt;listcomp&gt;)
-        1    0.003    0.003    0.288    0.288 &lt;string&gt;:1(&lt;module&gt;)
+        1    0.017    0.017    0.292    0.292 &lt;ipython-input-37-8a67fb24c99e&gt;:3(random_walker_max_distance)
+        1    0.007    0.007    0.273    0.273 &lt;ipython-input-37-8a67fb24c99e&gt;:8(&lt;listcomp&gt;)
+        1    0.003    0.003    0.295    0.295 &lt;string&gt;:1(&lt;module&gt;)
         1    0.002    0.002    0.002    0.002 {method &#39;reduce&#39; of &#39;numpy.ufunc&#39; objects}
-        1    0.000    0.000    0.288    0.288 {built-in method builtins.exec}
+        1    0.000    0.000    0.295    0.295 {built-in method builtins.exec}
         1    0.000    0.000    0.002    0.002 fromnumeric.py:69(_wrapreduction)
         1    0.000    0.000    0.002    0.002 fromnumeric.py:2397(amax)
         1    0.000    0.000    0.000    0.000 fromnumeric.py:70(&lt;dictcomp&gt;)
@@ -13031,16 +13104,16 @@ Wall time: 28.6 µs
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="IPython-nbconvert">IPython nbconvert<a class="anchor-link" href="#IPython-nbconvert">&#182;</a></h2>
+<h2 id="nbconvert-to-HTML-file">nbconvert to HTML file<a class="anchor-link" href="#nbconvert-to-HTML-file">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ipython nbconvert --to html ch01-code-listing.ipynb
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert --to html ch01-intro.ipynb
 </pre></div>
 
 </div>
@@ -13057,10 +13130,57 @@ Wall time: 28.6 µs
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[TerminalIPythonApp] WARNING | Subcommand `ipython nbconvert` is deprecated and will be removed in future versions.
-[TerminalIPythonApp] WARNING | You likely want to use `jupyter nbconvert` in the future
-[NbConvertApp] Converting notebook ch01-code-listing.ipynb to html
-[NbConvertApp] Writing 274111 bytes to ch01-code-listing.html
+<pre>[NbConvertApp] Converting notebook ch01-intro.ipynb to html
+[NbConvertApp] Writing 292935 bytes to ch01-intro.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="nbconvert-to-PDF-file">nbconvert to PDF file<a class="anchor-link" href="#nbconvert-to-PDF-file">&#182;</a></h2><p>Requires a LaTeX environment to be installed. (Not yet done as of this time.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="nbconvert-to-pure-Python-source-code">nbconvert to pure Python source code<a class="anchor-link" href="#nbconvert-to-pure-Python-source-code">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert ch01-intro.ipynb --to python
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook ch01-intro.ipynb to python
+[NbConvertApp] Writing 3948 bytes to ch01-intro.py
 </pre>
 </div>
 </div>
@@ -13071,10 +13191,10 @@ Wall time: 28.6 µs
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ipython nbconvert --to pdf ch01-code-listing.ipynb
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ls ch01*
 </pre></div>
 
 </div>
@@ -13091,175 +13211,7 @@ Wall time: 28.6 µs
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[TerminalIPythonApp] WARNING | Subcommand `ipython nbconvert` is deprecated and will be removed in future versions.
-[TerminalIPythonApp] WARNING | You likely want to use `jupyter nbconvert` in the future
-[NbConvertApp] Converting notebook ch01-code-listing.ipynb to pdf
-[NbConvertApp] Writing 26737 bytes to notebook.tex
-[NbConvertApp] Building PDF
-Traceback (most recent call last):
-  File &#34;/home/bjpcjp/anaconda3/bin/ipython&#34;, line 6, in &lt;module&gt;
-    sys.exit(IPython.start_ipython())
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/IPython/__init__.py&#34;, line 119, in start_ipython
-    return launch_new_instance(argv=argv, **kwargs)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/traitlets/config/application.py&#34;, line 658, in launch_instance
-    app.start()
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/IPython/terminal/ipapp.py&#34;, line 344, in start
-    return self.subapp.start()
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 293, in start
-    self.convert_notebooks()
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 457, in convert_notebooks
-    self.convert_single_notebook(notebook_filename)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 428, in convert_single_notebook
-    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 357, in export_single_notebook
-    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/exporter.py&#34;, line 165, in from_filename
-    return self.from_file(f, resources=resources, **kw)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/exporter.py&#34;, line 183, in from_file
-    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/pdf.py&#34;, line 167, in from_notebook_node
-    rc = self.run_latex(tex_file)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/pdf.py&#34;, line 129, in run_latex
-    self.latex_count, log_error)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/pdf.py&#34;, line 91, in run_command
-    raise OSError(&#34;%s not found on PATH&#34; % command_list[0])
-OSError: pdflatex not found on PATH
-
-If you suspect this is an IPython bug, please report it at:
-    https://github.com/ipython/ipython/issues
-or send an email to the mailing list at ipython-dev@scipy.org
-
-You can print a more detailed traceback right now with &#34;%tb&#34;, or use &#34;%debug&#34;
-to interactively debug it.
-
-Extra-detailed tracebacks for bug-reporting purposes can be enabled via:
-    c.Application.verbose_crash=True
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">writefile</span> custom_template.tplx
-((*- extends &#39;article.tplx&#39; -*))
-
-((* block title *)) \title{Document title} ((* endblock title *))
-((* block author *)) \author{Author&#39;s Name} ((* endblock author *))
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ipython nbconvert ch01-code-listing.ipynb --to pdf --template custom_template.tplx
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[TerminalIPythonApp] WARNING | Subcommand `ipython nbconvert` is deprecated and will be removed in future versions.
-[TerminalIPythonApp] WARNING | You likely want to use `jupyter nbconvert` in the future
-[NbConvertApp] Converting notebook ch01-code-listing.ipynb to pdf
-[NbConvertApp] Writing 26760 bytes to notebook.tex
-[NbConvertApp] Building PDF
-Traceback (most recent call last):
-  File &#34;/home/bjpcjp/anaconda3/bin/ipython&#34;, line 6, in &lt;module&gt;
-    sys.exit(IPython.start_ipython())
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/IPython/__init__.py&#34;, line 119, in start_ipython
-    return launch_new_instance(argv=argv, **kwargs)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/traitlets/config/application.py&#34;, line 658, in launch_instance
-    app.start()
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/IPython/terminal/ipapp.py&#34;, line 344, in start
-    return self.subapp.start()
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 293, in start
-    self.convert_notebooks()
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 457, in convert_notebooks
-    self.convert_single_notebook(notebook_filename)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 428, in convert_single_notebook
-    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/nbconvertapp.py&#34;, line 357, in export_single_notebook
-    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/exporter.py&#34;, line 165, in from_filename
-    return self.from_file(f, resources=resources, **kw)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/exporter.py&#34;, line 183, in from_file
-    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/pdf.py&#34;, line 167, in from_notebook_node
-    rc = self.run_latex(tex_file)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/pdf.py&#34;, line 129, in run_latex
-    self.latex_count, log_error)
-  File &#34;/home/bjpcjp/anaconda3/lib/python3.5/site-packages/nbconvert/exporters/pdf.py&#34;, line 91, in run_command
-    raise OSError(&#34;%s not found on PATH&#34; % command_list[0])
-OSError: pdflatex not found on PATH
-
-If you suspect this is an IPython bug, please report it at:
-    https://github.com/ipython/ipython/issues
-or send an email to the mailing list at ipython-dev@scipy.org
-
-You can print a more detailed traceback right now with &#34;%tb&#34;, or use &#34;%debug&#34;
-to interactively debug it.
-
-Extra-detailed tracebacks for bug-reporting purposes can be enabled via:
-    c.Application.verbose_crash=True
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>ipython nbconvert ch01-code-listing.ipynb --to python
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[TerminalIPythonApp] WARNING | Subcommand `ipython nbconvert` is deprecated and will be removed in future versions.
-[TerminalIPythonApp] WARNING | You likely want to use `jupyter nbconvert` in the future
-[NbConvertApp] Converting notebook ch01-code-listing.ipynb to python
-[NbConvertApp] Writing 2866 bytes to ch01-code-listing.py
+<pre>ch01-intro.html  ch01-intro.ipynb  ch01-intro.py
 </pre>
 </div>
 </div>
