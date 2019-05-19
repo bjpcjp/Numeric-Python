@@ -1,5 +1,6 @@
-# Numeric Computing with Python
+# Numeric Computing with Python, 2nd edition
 ### [Original ebook on Apress](https://www.apress.com/us/book/9781484242452)
+![book-cover](pics/bookcover-2nd-ed.png)
 
 <table>
   <tr>
@@ -83,4 +84,3 @@
   </tr>
 </table>
 
-![book-cover](pics/bookcover.png)
