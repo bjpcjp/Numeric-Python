@@ -1,4 +1,11 @@
-# Numeric Computing with Python
+# Numeric Computing with Python, 2nd edition
+### [Original ebook on Apress](https://www.apress.com/us/book/9781484242452)
+![book-cover](pics/bookcover-2nd-ed.png)
+
+### TODO:
+- Fix FeniCS installation bugs (Chapter 11)
+- Review Convoluton Filter code (Chapter 18)
+- ReDo Chap 19 on Optimization
 
 <table>
   <tr>
@@ -6,7 +13,7 @@
   </tr>
   <tr>
     <td>Intro</td>
-    <td>Python, iPython, Python notebooks, Spyder</td>
+    <td>Python, iPython, Jupyter</td>
   </tr>
   <tr>
     <td>Intro to NumPy</td>
@@ -82,4 +89,3 @@
   </tr>
 </table>
 
-![book-cover](pics/bookcover.png)
