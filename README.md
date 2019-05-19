@@ -2,13 +2,17 @@
 ### [Original ebook on Apress](https://www.apress.com/us/book/9781484242452)
 ![book-cover](pics/bookcover-2nd-ed.png)
 
+### TODO:
+- Fix FeniCS installation bugs (Chapter 11)
+- Review Convoluton Filter code (Chapter 18)
+
 <table>
   <tr>
     <th>Chapter</th><th>Topics</th>
   </tr>
   <tr>
     <td>Intro</td>
-    <td>Python, iPython, Python notebooks, Spyder</td>
+    <td>Python, iPython, Jupyter</td>
   </tr>
   <tr>
     <td>Intro to NumPy</td>
