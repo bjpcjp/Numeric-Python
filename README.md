@@ -4,8 +4,8 @@
 
 ### TODO:
 - Fix FeniCS installation bugs (Chapter 11)
-- Review Convoluton Filter code (Chapter 18)
 - ReDo Chap 19 on Optimization
+
 
 <table>
   <tr>
