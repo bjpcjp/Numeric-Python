@@ -4,8 +4,6 @@
 
 ### TODO:
 - Fix FeniCS installation bugs (Chapter 11)
-- ReDo Chap 19 on Optimization
-
 
 <table>
   <tr>
